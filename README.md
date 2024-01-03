@@ -28,5 +28,9 @@
   <li>Katmanlar oluşturuldu ve projenin genel yapısı belirlendi.</li>
   <li>Entity Framework paketleri indirildi ve entityler oluşturuldu.</li>
   <li>Veritabanı işlemleri için Context sınıfı tanımlandı ve migration işlemi gerçekleştirildi.</li>
+  <li>Gerekli interface yapısı kuruldu.</li>
+  <li>DataAccessLayer katmanı tamamlandı.</li>
+  <li>Business Abstract Serviceler ve Manager Sınıfları yazıldı.</li>
+  <li>Tüm entityler için gerekli Dtolar yazıldı.</li>
 </ol>
 <h2>Proje Görselleri</h2>
