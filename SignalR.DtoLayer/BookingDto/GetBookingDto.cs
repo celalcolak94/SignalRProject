@@ -1,6 +1,6 @@
-﻿namespace SignalR.EntityLayer.Entities
+﻿namespace SignalR.DtoLayer.BookingDto
 {
-    public class Booking
+    public class GetBookingDto
     {
         public int BookingID { get; set; }
         public string BookingName { get; set; }

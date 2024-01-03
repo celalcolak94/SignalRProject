@@ -1,6 +1,6 @@
-﻿namespace SignalR.EntityLayer.Entities
+﻿namespace SignalR.DtoLayer.TestimonialDto
 {
-    public class Testimonial
+    public class ResultTestimonialDto
     {
         public int TestimonialID { get; set; }
         public string TestimonialName { get; set; }
