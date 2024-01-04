@@ -28,9 +28,11 @@
   <li>Katmanlar oluşturuldu ve projenin genel yapısı belirlendi.</li>
   <li>Entity Framework paketleri indirildi ve entityler oluşturuldu.</li>
   <li>Veritabanı işlemleri için Context sınıfı tanımlandı ve migration işlemi gerçekleştirildi.</li>
-  <li>Gerekli interface yapısı kuruldu.</li>
+  <li>Repository Design Pattern yaklaşımı kullanılarak veritabanı işlemleri gerçekleştirildi.</li>
   <li>DataAccessLayer katmanı tamamlandı.</li>
   <li>Business Abstract Serviceler ve Manager Sınıfları yazıldı.</li>
   <li>Tüm entityler için gerekli Dtolar yazıldı.</li>
+  <li>Api de tüm entityler için controllerlar yazıldı. </li>
+  <li>MsSQL bağlantısı kullanılarak crud işlemleri yapıldı ve test edildi.</li>
 </ol>
 <h2>Proje Görselleri</h2>
