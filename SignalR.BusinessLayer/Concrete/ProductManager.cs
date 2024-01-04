@@ -4,11 +4,11 @@ using SignalR.EntityLayer.Entities;
 
 namespace SignalR.BusinessLayer.Concrete
 {
-    internal class ProductService : IProductService
+    public class ProductManager : IProductService
     {
         private readonly IProductDal _productDal;
 
-        public ProductService(IProductDal productDal)
+        public ProductManager(IProductDal productDal)
         {
             _productDal = productDal;
         }

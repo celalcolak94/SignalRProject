@@ -4,11 +4,11 @@ using SignalR.EntityLayer.Entities;
 
 namespace SignalR.BusinessLayer.Concrete
 {
-    public class SocialMediaService : ISocialMediaService
+    public class SocialMediaManager : ISocialMediaService
     {
         private readonly ISocialMediaDal _socialMediaDal;
 
-        public SocialMediaService(ISocialMediaDal socialMediaDal)
+        public SocialMediaManager(ISocialMediaDal socialMediaDal)
         {
             _socialMediaDal = socialMediaDal;
         }
