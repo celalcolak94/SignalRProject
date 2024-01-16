@@ -34,5 +34,8 @@
   <li>Tüm entityler için gerekli Dtolar yazıldı.</li>
   <li>Api de tüm entityler için controllerlar yazıldı. </li>
   <li>MsSQL bağlantısı kullanılarak crud işlemleri yapıldı ve test edildi.</li>
+  <li>Admin Paneli Temanın Layout kısmı Header, Navbar, Sidebar, Script olmak üzere ViewComponentler aracılığıyla yazıldı.</li>
+  <li>Kategori listesi Apiden başarılı bir şekilde çekildi ve listelendi. Yeni kategori girişi, güncelleme ve silme işlemleri yapıldı.</li>
+  <li>Ürün listesi Apiden başarılı bir şekilde çekildi ve listelendi. Yeni ürün girişi, güncelleme ve silme işlemleri yapıldı.</li>
 </ol>
 <h2>Proje Görselleri</h2>
