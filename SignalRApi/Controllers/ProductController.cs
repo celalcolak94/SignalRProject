@@ -27,6 +27,23 @@ namespace SignalRApi.Controllers
             return Ok(value);
         }
 
+        [HttpGet("ProductListWithCategory")]
+        public IActionResult ProductListWithCategory() 
+        {
+            var value = _productService.TGetProductsWithCategory().Select(x => new ResultProductWithCategory
+            {
+                ProductID = x.ProductID,
+                ProductName = x.ProductName,
+                Description = x.Description,
+                Price = x.Price,
+                ImageUrl = x.ImageUrl,
+                ProductStatus = x.ProductStatus,
+                CategoryName = x.Category.CategoryName
+
+            }).ToList();
+            return Ok(value);
+        }
+
         [HttpPost]
         public IActionResult CreateProduct(CreateProductDto createProductDto)
         {
@@ -36,12 +53,13 @@ namespace SignalRApi.Controllers
                 ImageUrl = createProductDto.ImageUrl,
                 Price = createProductDto.Price,
                 ProductName = createProductDto.ProductName,
-                ProductStatus = true
+                ProductStatus = true,
+                CategoryID = createProductDto.CategoryID
             });
             return Ok("Ürün Eklendi.");
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult DeleteProduct(int id)
         {
             var value = _productService.TGetByID(id);
@@ -49,7 +67,7 @@ namespace SignalRApi.Controllers
             return Ok("Ürün Silindi.");
         }
 
-        [HttpGet("GetProduct")]
+        [HttpGet("{id}")]
         public IActionResult GetProduct(int id)
         {
             var value = _productService.TGetByID(id);
@@ -66,7 +84,8 @@ namespace SignalRApi.Controllers
                 ImageUrl = updateProductDto.ImageUrl,
                 Price = updateProductDto.Price,
                 ProductName = updateProductDto.ProductName,
-                ProductStatus = updateProductDto.ProductStatus
+                ProductStatus = updateProductDto.ProductStatus,
+                CategoryID = updateProductDto.CategoryID
             });
             return Ok("Ürün Güncellendi.");
         }
