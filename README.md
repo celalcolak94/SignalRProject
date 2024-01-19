@@ -37,5 +37,6 @@
   <li>Admin Paneli Temanın Layout kısmı Header, Navbar, Sidebar, Script olmak üzere ViewComponentler aracılığıyla yazıldı.</li>
   <li>Kategori listesi Apiden başarılı bir şekilde çekildi ve listelendi. Yeni kategori girişi, güncelleme ve silme işlemleri yapıldı.</li>
   <li>Ürün listesi Apiden başarılı bir şekilde çekildi ve listelendi. Yeni ürün girişi, güncelleme ve silme işlemleri yapıldı.</li>
+  <li>Hakkımızda, Rezervasyon, İletişim ve İndirimli ürünler ile ilgili listeleme, ekleme, güncelleme ve silme işlemleri başarılı bir şekilde yapıldı.</li>
 </ol>
 <h2>Proje Görselleri</h2>
