@@ -27,8 +27,15 @@ namespace SignalRApi.Controllers
             return Ok(value);
         }
 
+        [HttpGet("{id}")]
+        public IActionResult GetProduct(int id)
+        {
+            var value = _productService.TGetByID(id);
+            return Ok(value);
+        }
+
         [HttpGet("ProductListWithCategory")]
-        public IActionResult ProductListWithCategory() 
+        public IActionResult ProductListWithCategory()
         {
             var value = _productService.TGetProductsWithCategory().Select(x => new ResultProductWithCategory
             {
@@ -42,6 +49,48 @@ namespace SignalRApi.Controllers
 
             }).ToList();
             return Ok(value);
+        }
+
+        [HttpGet("ProductCount")]
+        public IActionResult ProductCount()
+        {
+            return Ok(_productService.TProductCount());
+        }
+
+        [HttpGet("ProductCountByHamburger")]
+        public IActionResult ProductCountByHamburger()
+        {
+            return Ok(_productService.TProductCountByCategoryNameHamburger());
+        }
+
+        [HttpGet("ProductCountByDrink")]
+        public IActionResult ProductCountByDrink()
+        {
+            return Ok(_productService.TProductCountByCategoryNameDrink());
+        }
+
+        [HttpGet("ProductNameByMaxPrice")]
+        public IActionResult ProductNameByMaxPrice()
+        {
+            return Ok(_productService.TProductNameByMaxPrice());
+        }
+
+        [HttpGet("ProductNameByMinPrice")]
+        public IActionResult ProductNameByMinPrice()
+        {
+            return Ok(_productService.TProductNameByMinPrice());
+        }
+
+        [HttpGet("ProductPriceAvg")]
+        public IActionResult ProductPriceAvg()
+        {
+            return Ok(_productService.TProductPriceAvg());
+        }
+
+        [HttpGet("ProductAvgPriceByHamburger")]
+        public IActionResult ProductAvgPriceByHamburger()
+        {
+            return Ok(_productService.TProductAvgPriceByHamburger());
         }
 
         [HttpPost]
@@ -65,13 +114,6 @@ namespace SignalRApi.Controllers
             var value = _productService.TGetByID(id);
             _productService.TDelete(value);
             return Ok("Ürün Silindi.");
-        }
-
-        [HttpGet("{id}")]
-        public IActionResult GetProduct(int id)
-        {
-            var value = _productService.TGetByID(id);
-            return Ok(value);
         }
 
         [HttpPut]
