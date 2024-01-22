@@ -40,5 +40,6 @@
   <li>Hakkımızda, Rezervasyon, İletişim, Sosyal Medya, Müşteri Yorumları ve İndirimli ürünler ile ilgili listeleme, ekleme, güncelleme ve silme işlemleri başarılı bir şekilde yapıldı.</li>
   <li>SignalR paketleri kuruldu. Hub sınıfı oluşturuldu ve başarılı bir şekilde bağlantı sağlandı.</li>
   <li>Mimaride entitye özgü methodlar yazılarak istatistikler çekildi. Sipariş ve sipariş detay için entityler oluşturuldu ve mimariye dahil edildi.</li>
+  <li>Dashboardda tüm istatistikler signalR kullanılarak çekildi. UI tasarımı sorunsuz bir şekilde entegre edildi.</li>
 </ol>
 <h2>Proje Görselleri</h2>
