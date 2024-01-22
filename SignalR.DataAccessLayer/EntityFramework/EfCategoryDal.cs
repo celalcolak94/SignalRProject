@@ -11,7 +11,7 @@ namespace SignalR.DataAccessLayer.EntityFramework
         {
         }
 
-        public int AktiveCategoryCount()
+        public int ActiveCategoryCount()
         {
             using var context = new SignalRContext();
             return context.Categories.Where(x => x.CategoryStatus == true).Count();

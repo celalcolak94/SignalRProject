@@ -36,7 +36,7 @@ namespace SignalRApi.Controllers
         [HttpGet("AktiveCategoryCount")]
         public IActionResult AktiveCategoryCount()
         {
-            return Ok(_categoryService.TAktiveCategoryCount());
+            return Ok(_categoryService.TActiveCategoryCount());
         }
 
         [HttpGet("PassiveCategoryCount")]
