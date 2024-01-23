@@ -19,16 +19,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav  mx-auto ">
                         <li class="nav-item">
-                            <a asp-controller="Default" asp-action="Index" class="nav-link">Ana Sayfa<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a asp-controller="Menu" asp-action="Index" class="nav-link">Menü</a>
-                        </li>
-                        <li class="nav-item">
-                            <a asp-controller="AboutUI" asp-action="Index" class="nav-link">Hakkımızda</a>
+                            <a class="nav-link" asp-controller="Default" asp-action="Index">Ana Sayfa</a>
                         </li>
                         <li class="nav-item active">
-                            <a asp-controller="BookATable" asp-action="Index" class="nav-link">Rezervasyon</a>
+                            <a class="nav-link" asp-controller="Menu" asp-action="Index">Menü<span class="sr-only">(current)</span> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="AboutUI" asp-action="Index">Hakkımızda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="BookATable" asp-action="Index">Rezervasyon</a>
                         </li>
                     </ul>
                     <div class="user_option">
@@ -103,3 +103,4 @@
         </div>
     </header>
     <!-- end header section -->
+</div>
