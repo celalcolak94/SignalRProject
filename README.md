@@ -42,5 +42,6 @@
   <li>Mimaride entitye özgü methodlar yazılarak istatistikler çekildi. Sipariş ve sipariş detay için entityler oluşturuldu ve mimariye dahil edildi.</li>
   <li>Dashboardda tüm istatistikler signalR kullanılarak çekildi. UI tasarımı sorunsuz bir şekilde entegre edildi.</li>
   <li>UI Tasarımında ana sayfadaki tüm veriler API kullanılarak dinamik bir şekilde veritabanından çekildi.</li>
+  <li>Menü sayfası oluşturuldu ve ürünler listelendi. Sepet sınıfı oluşturularak mimariye dahil edildi. Sepet ekranı tasarımı yapıldı ve sepetteki ürünler başarılı bir şekilde listelendi.</li>
 </ol>
 <h2>Proje Görselleri</h2>
