@@ -43,5 +43,7 @@
   <li>Dashboardda tüm istatistikler signalR kullanılarak çekildi. UI tasarımı sorunsuz bir şekilde entegre edildi.</li>
   <li>UI Tasarımında ana sayfadaki tüm veriler API kullanılarak dinamik bir şekilde veritabanından çekildi.</li>
   <li>Menü sayfası oluşturuldu ve ürünler listelendi. Sepet sınıfı oluşturularak mimariye dahil edildi. Sepet ekranı tasarımı yapıldı ve sepetteki ürünler başarılı bir şekilde listelendi.</li>
+  <li>Sepette kupon kodu tasarımı yapıldı. Sepete ürün ekleme ve sepetten ürün çıkartma işlemleri yapıldı.</li>
+  <li>Rezervasyon yapma işlemi gerçekleştirildi. Rezervasyon listesi SignalR kullanılarak admin panelindeki tabloya çekildi.</li>
 </ol>
 <h2>Proje Görselleri</h2>
