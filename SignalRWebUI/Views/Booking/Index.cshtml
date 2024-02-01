@@ -24,7 +24,7 @@
                 connection.start().then(() => {
                     setInterval(() => {
                         connection.invoke("GetBookingList");
-                    }, 1000);
+                    }, 2000);
                 }).catch((err) => { console.log(err) });
 
                 connection.on("ReceiveBookingList", (value) => {
