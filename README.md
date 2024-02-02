@@ -45,5 +45,6 @@
   <li>Menü sayfası oluşturuldu ve ürünler listelendi. Sepet sınıfı oluşturularak mimariye dahil edildi. Sepet ekranı tasarımı yapıldı ve sepetteki ürünler başarılı bir şekilde listelendi.</li>
   <li>Sepette kupon kodu tasarımı yapıldı. Sepete ürün ekleme ve sepetten ürün çıkartma işlemleri yapıldı.</li>
   <li>Rezervasyon yapma işlemi gerçekleştirildi. Rezervasyon listesi SignalR kullanılarak admin panelindeki tabloya çekildi.</li>
+  <li>Notification sınıfı mimariye dahil edildi. Admin paneli navbarda, entitye özgü methodlar yazılarak ve signalR kullanılarak listeleme işlemi gerçekleştirildi.</li>
 </ol>
 <h2>Proje Görselleri</h2>
