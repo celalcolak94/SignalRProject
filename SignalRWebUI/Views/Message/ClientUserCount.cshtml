@@ -1,0 +1,47 @@
+﻿
+@{
+    Layout = null;
+}
+
+<script src="~/lib/microsoft/signalr/dist/browser/signalr.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+<!DOCTYPE html>
+<html>
+
+@await Component.InvokeAsync("_UILayoutHeaderPartialComponent")
+
+<body class="sub_page">
+    @await Component.InvokeAsync("_MenuNavbarPartialComponent")
+
+    <section class="food_section layout_padding-bottom">
+        <div class="container mt-5">
+            <script type="text/javascript">
+
+                $(document).ready(() => {
+
+                    var connection = new signalR.HubConnectionBuilder().withUrl("http://localhost:5125/SignalRHub").build();
+
+                    connection.start().then(() => {
+
+                    }).catch((err) => { console.log(err) });
+
+                    connection.on("ReceiveClientCount", (clientCount) => {
+                        $("#clientCountValue").text(clientCount);
+                    });
+                });
+
+            </script>
+
+            <h4 class="page-title">Anlık Client Sayfası : <strong id="clientCountValue"></strong></h4>
+        </div>
+    </section>
+
+    @await Component.InvokeAsync("_UILayoutFooterPartialComponent")
+    @await Component.InvokeAsync("_UILayoutScriptPartialComponent")
+
+</body>
+
+</html>
