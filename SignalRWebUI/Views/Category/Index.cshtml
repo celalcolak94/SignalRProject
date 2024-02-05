@@ -2,6 +2,7 @@
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/AdminLayout/Index.cshtml";
+    int count = 0;
 }
 
 @model List<ResultCategoryDto>
@@ -32,10 +33,17 @@
                             <tbody>
                                 @foreach (var item in Model)
                                 {
+                                    count++;
                                     <tr>
-                                        <td>@item.CategoryID</td>
+                                        <th>@count</th>
                                         <td>@item.CategoryName</td>
-                                        <td>@item.CategoryStatus</td>
+                                        @if (item.CategoryStatus)
+                                        {
+                                            <td style="color:green;">Aktif</td>
+                                        }else
+                                        {
+                                            <td style="color:red;">Pasif</td>
+                                        }
                                         <td><a asp-controller="Category" asp-action="DeleteCategory" asp-route-id="@item.CategoryID" class="btn btn-outline-danger">Sil</a></td>
                                         <td><a asp-controller="Category" asp-action="UpdateCategory" asp-route-id="@item.CategoryID" class="btn btn-outline-success">Güncelle</a></td>
                                     </tr>

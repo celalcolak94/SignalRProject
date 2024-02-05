@@ -1,6 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Index";
     Layout = "~/Views/AdminLayout/Index.cshtml";
+    int count = 0;
 }
 
 @model List<ResultNotificationDto>
@@ -25,6 +26,7 @@
                                     <th scope="col">Açıklama</th>
                                     <th scope="col">Tarih</th>
                                     <th scope="col">Durum</th>
+                                    <th scope="col">Durum Güncelle</th>
                                     <th scope="col">Sil</th>
                                     <th scope="col">Güncelle</th>
                                 </tr>
@@ -32,15 +34,32 @@
                             <tbody>
                                 @foreach (var item in Model)
                                 {
+                                    count++;
                                     <tr>
-                                        <td>@item.NotificationID</td>
+                                        <th>@count</th>
                                         <td>@item.Description</td>
                                         <td>@item.Date</td>
-                                        <td>
-                                            <a asp-controller="Notification" asp-action="NotificationStatusChange" asp-route-id="@item.NotificationID">@item.Status</a>
-                                        </td>
+                                        @if (item.Status)
+                                        {
+                                            <td style="color:green;">Okundu</td>
+                                        }else
+                                        {
+                                            <td style="color:red;">Okunmadı</td>
+                                        }
+
+                                        @if (item.Status)
+                                        {
+                                            <td>
+                                                <a asp-controller="Notification" asp-action="NotificationStatusChange" asp-route-id="@item.NotificationID" class="btn btn-outline-dark">Okunmadı Yap</a>
+                                            </td>
+                                        }else
+                                        {
+                                            <td>
+                                                <a asp-controller="Notification" asp-action="NotificationStatusChange" asp-route-id="@item.NotificationID" class="btn btn-outline-success">Okundu Yap</a>
+                                            </td>
+                                        }
                                         <td><a asp-controller="Notification" asp-action="DeleteNotification" asp-route-id="@item.NotificationID" class="btn btn-outline-danger">Sil</a></td>
-                                        <td><a asp-controller="Notification" asp-action="UpdateNotification" asp-route-id="@item.NotificationID" class="btn btn-outline-success">Güncelle</a></td>
+                                        <td><a asp-controller="Notification" asp-action="UpdateNotification" asp-route-id="@item.NotificationID" class="btn btn-outline-warning">Güncelle</a></td>
                                     </tr>
                                 }
                             </tbody>

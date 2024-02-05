@@ -77,5 +77,15 @@ namespace SignalR.BusinessLayer.Concrete
         {
             _productDal.Update(entity);
         }
+
+        public List<Product> TGetProductsWithCategoryByStatusTrue()
+        {
+            return _productDal.GetProductsWithCategoryByStatusTrue();
+        }
+
+        public void TProductChangeStatus(int id)
+        {
+            _productDal.ProductChangeStatus(id);
+        }
     }
 }

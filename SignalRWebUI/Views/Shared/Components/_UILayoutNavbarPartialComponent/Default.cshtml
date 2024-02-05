@@ -18,7 +18,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav  mx-auto ">
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a asp-controller="Default" asp-action="Index" class="nav-link">Ana Sayfa<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
@@ -27,12 +27,12 @@
                         <li class="nav-item">
                             <a asp-controller="AboutUI" asp-action="Index" class="nav-link">Hakkımızda</a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a asp-controller="BookATable" asp-action="Index" class="nav-link">Rezervasyon</a>
                         </li>
                     </ul>
                     <div class="user_option">
-                        <a href="" class="user_link">
+                        <a asp-controller="Login" asp-action="Index" class="user_link">
                             <i class="fa fa-user" aria-hidden="true"></i>
                         </a>
                         <a class="cart_link" asp-controller="Baskets" asp-action="Index">

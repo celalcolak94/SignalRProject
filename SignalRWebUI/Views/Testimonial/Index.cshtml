@@ -2,6 +2,7 @@
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/AdminLayout/Index.cshtml";
+    int count = 0;
 }
 
 @model List<ResultTestimonialDto>
@@ -32,8 +33,9 @@
                             <tbody>
                                 @foreach (var item in Model)
                                 {
+                                    count++;
                                     <tr>
-                                        <td>@item.TestimonialID</td>
+                                        <th>@count</th>
                                         <td>@item.TestimonialName</td>
                                         <td>@item.Status</td>
                                         <td><a asp-controller="Testimonial" asp-action="DeleteTestimonial" asp-route-id="@item.TestimonialID" class="btn btn-outline-danger">Sil</a></td>

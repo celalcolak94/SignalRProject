@@ -2,6 +2,7 @@
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/AdminLayout/Index.cshtml";
+    int count = 0;
 }
 
 @model List<ResultSocialMediaDto>
@@ -32,8 +33,9 @@
                             <tbody>
                                 @foreach (var item in Model)
                                 {
+                                    count++;
                                     <tr>
-                                        <td>@item.SocialMediaID</td>
+                                        <th>@count</th>
                                         <td>@item.Title</td>
                                         <td>@item.Url</td>
                                         <td><a asp-controller="SocialMedia" asp-action="DeleteSocialMedia" asp-route-id="@item.SocialMediaID" class="btn btn-outline-danger">Sil</a></td>

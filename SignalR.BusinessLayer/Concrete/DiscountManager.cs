@@ -18,6 +18,11 @@ namespace SignalR.BusinessLayer.Concrete
             _discountDal.Add(entity);
         }
 
+        public void TChangeStatus(int id)
+        {
+            _discountDal.ChangeStatus(id);
+        }
+
         public void TDelete(Discount entity)
         {
             _discountDal.Delete(entity);
@@ -26,6 +31,11 @@ namespace SignalR.BusinessLayer.Concrete
         public Discount TGetByID(int id)
         {
             return _discountDal.GetByID(id);
+        }
+
+        public List<Discount> TGetDiscountsByStatusTrue()
+        {
+            return _discountDal.GetDiscountsByStatusTrue();
         }
 
         public List<Discount> TGetListAll()

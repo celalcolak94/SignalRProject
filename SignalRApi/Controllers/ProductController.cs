@@ -51,6 +51,23 @@ namespace SignalRApi.Controllers
             return Ok(value);
         }
 
+        [HttpGet("ProductListWithCategoryByStatusTrue")]
+        public IActionResult ProductListWithCategoryByStatusTrue()
+        {
+            var value = _productService.TGetProductsWithCategoryByStatusTrue().Select(x => new ResultProductWithCategory
+            {
+                ProductID = x.ProductID,
+                ProductName = x.ProductName,
+                Description = x.Description,
+                Price = x.Price,
+                ImageUrl = x.ImageUrl,
+                ProductStatus = x.ProductStatus,
+                CategoryName = x.Category.CategoryName
+
+            }).ToList();
+            return Ok(value);
+        }
+
         [HttpGet("ProductCount")]
         public IActionResult ProductCount()
         {
@@ -130,6 +147,13 @@ namespace SignalRApi.Controllers
                 CategoryID = updateProductDto.CategoryID
             });
             return Ok("Ürün Güncellendi.");
+        }
+
+        [HttpGet("ProductChangeStatus/{id}")]
+        public async Task<IActionResult> ProductChangeStatus(int id)
+        {
+            _productService.TProductChangeStatus(id);
+            return Ok("Güncelleme yapıldı.");
         }
     }
 }

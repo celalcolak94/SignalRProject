@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using SignalRWebUI.Dtos.BasketDtos;
 using SignalRWebUI.Dtos.CategoryDtos;
@@ -7,6 +8,7 @@ using System.Text;
 
 namespace SignalRWebUI.Controllers
 {
+    [AllowAnonymous]
     public class MenuController : Controller
     {
         private readonly IHttpClientFactory _httpClientFactory;
@@ -25,7 +27,7 @@ namespace SignalRWebUI.Controllers
             var values2 = JsonConvert.DeserializeObject<List<ResultCategoryDto>>(jsonData2);
             ViewBag.Categories = values2;
 
-            var responseMessage = await client.GetAsync("http://localhost:5125/api/Product/ProductListWithCategory");
+            var responseMessage = await client.GetAsync("http://localhost:5125/api/Product/ProductListWithCategoryByStatusTrue");
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();

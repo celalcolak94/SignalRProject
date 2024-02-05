@@ -2,6 +2,7 @@
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/AdminLayout/Index.cshtml";
+    int count = 0;
 }
 
 @model List<ResultDiscountDto>
@@ -17,7 +18,7 @@
                     </div>
                     <div class="card-body">
                         <div class="card-sub">
-                            Günün indirimli ürünleri aşağıda yer almaktadır. Tema bütünlüğü için 2 adet indirimli ürün seçiniz.
+                            Günün indirimli ürünleri aşağıda yer almaktadır. Tema bütünlüğü için <strong>2 adet</strong> indirimli ürün seçiniz.
                         </div>
                         <table class="table mt-3">
                             <thead>
@@ -26,6 +27,7 @@
                                     <th scope="col">Ürün</th>
                                     <th scope="col">İndirim Oranı</th>
                                     <th scope="col">Durum</th>
+                                    <th scope="col">Durum Güncelle</th>
                                     <th scope="col">Sil</th>
                                     <th scope="col">Güncelle</th>
                                 </tr>
@@ -33,13 +35,28 @@
                             <tbody>
                                 @foreach (var item in Model)
                                 {
+                                    count++;
                                     <tr>
-                                        <td>@item.DiscountID</td>
+                                        <th>@count</th>
                                         <td>@item.Title</td>
                                         <td>@item.Amount</td>
-                                        <td><a asp-controller="Discount" asp-action="DeleteDiscount" asp-route-id="@item.DiscountID" class="btn btn-outline-warning">Durum</a></td>
+                                        @if (item.Status)
+                                        {
+                                            <td style="color:green;">Aktif</td>
+                                        }else
+                                        {
+                                            <td style="color:red;">Pasif</td>
+                                        }
+
+                                        @if (item.Status)
+                                        {
+                                            <td><a asp-controller="Discount" asp-action="ChangeStatus" asp-route-id="@item.DiscountID" class="btn btn-outline-dark">Pasif Yap</a></td>
+                                        }else
+                                        {
+                                            <td><a asp-controller="Discount" asp-action="ChangeStatus" asp-route-id="@item.DiscountID" class="btn btn-outline-success">Aktif Yap</a></td>
+                                        }
                                         <td><a asp-controller="Discount" asp-action="DeleteDiscount" asp-route-id="@item.DiscountID" class="btn btn-outline-danger">Sil</a></td>
-                                        <td><a asp-controller="Discount" asp-action="UpdateDiscount" asp-route-id="@item.DiscountID" class="btn btn-outline-success">Güncelle</a></td>
+                                        <td><a asp-controller="Discount" asp-action="UpdateDiscount" asp-route-id="@item.DiscountID" class="btn btn-outline-warning">Güncelle</a></td>
                                     </tr>
                                 }
                             </tbody>

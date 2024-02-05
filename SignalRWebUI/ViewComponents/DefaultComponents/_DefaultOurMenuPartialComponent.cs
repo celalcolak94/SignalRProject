@@ -23,7 +23,7 @@ namespace SignalRWebUI.ViewComponents.DefaultComponents
             var values2 = JsonConvert.DeserializeObject<List<ResultCategoryDto>> (jsonData2);
             ViewBag.Categories = values2;
 
-            var responseMessage = await client.GetAsync("http://localhost:5125/api/Product/ProductListWithCategory");
+            var responseMessage = await client.GetAsync("http://localhost:5125/api/Product/ProductListWithCategoryByStatusTrue");
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();

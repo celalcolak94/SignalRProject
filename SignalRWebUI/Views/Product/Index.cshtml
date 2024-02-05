@@ -1,6 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Index";
     Layout = "~/Views/AdminLayout/Index.cshtml";
+    int count = 0;
 }
 
 @model List<ResultProductDto>
@@ -33,12 +34,20 @@
                             <tbody>
                                 @foreach (var item in Model)
                                 {
+                                    count++;
                                     <tr>
-                                        <td>@item.ProductID</td>
+                                        <th>@count</th>
                                         <td>@item.ProductName</td>
                                         <td>@item.CategoryName</td>
                                         <td>@item.Price</td>
-                                        <td>@item.ProductStatus</td>
+                                        @if (item.ProductStatus)
+                                        {
+                                            <td><a asp-controller="Product" asp-action="ProductStatusChange" asp-route-id="@item.ProductID" style="color:green;">Stokta var</a></td>
+                                        }
+                                        else
+                                        {
+                                            <td><a asp-controller="Product" asp-action="ProductStatusChange" asp-route-id="@item.ProductID" style="color:red;">Stokta yok</a></td>
+                                        }
                                         <td><a asp-controller="Product" asp-action="DeleteProduct" asp-route-id="@item.ProductID" class="btn btn-outline-danger">Sil</a></td>
                                         <td><a asp-controller="Product" asp-action="UpdateProduct" asp-route-id="@item.ProductID" class="btn btn-outline-success">Güncelle</a></td>
                                     </tr>
