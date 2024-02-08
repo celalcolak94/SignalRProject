@@ -35,11 +35,19 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.0" />
+    <PackageReference Include="NETCore.MailKit" Version="2.1.0" />
+    <PackageReference Include="ZXing.Net" Version="0.16.9" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\SignalR.DataAccessLayer\SignalR.DataAccessLayer.csproj" />
     <ProjectReference Include="..\SignalR.EntityLayer\SignalR.EntityLayer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="QRCoder">
+      <HintPath>..\..\..\..\Desktop\Notlar\QRCode Oluşturma\QRCoder.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

@@ -8,7 +8,7 @@
                 <a class="" data-toggle="collapse" href="#collapseExample" aria-expanded="true">
                     <span>
                         Yönetim Paneli
-                        <span class="user-level">Admin</span>
+                        <span class="user-level">@User.Identity.Name</span>
                         <span class="caret"></span>
                     </span>
                 </a>
@@ -22,13 +22,13 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#edit">
-                                <span class="link-collapse">Şifre Güncelle</span>
+                            <a asp-controller="Setting" asp-action="Index">
+                                <span class="link-collapse">Ayarlar</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#settings">
-                                <span class="link-collapse">Ayarlar</span>
+                            <a asp-controller="Setting" asp-action="Index">
+                                <span class="link-collapse">Çıkış Yap</span>
                             </a>
                         </li>
                     </ul>
@@ -43,16 +43,21 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="index.html">
-                    <i class="la la-dashboard"></i>
-                    <p>Dashboard</p>
-                    <span class="badge badge-count">0</span>
-                </a>
-            </li>
-            <li class="nav-item">
                 <a asp-controller="Menu" asp-action="Index">
                     <i class="la la-medium"></i>
                     <p>Menüyü Gör</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a asp-controller="ProgressBars" asp-action="Index">
+                    <i class="la la-bar-chart"></i>
+                    <p>Anlık Durum Çubuğu</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a asp-controller="Statistic" asp-action="Index">
+                    <i class="la la-pie-chart"></i>
+                    <p>İstatistikler</p>
                 </a>
             </li>
             <li class="nav-item">
@@ -128,27 +133,33 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a asp-controller="Statistic" asp-action="Index">
-                    <i class="la la-pie-chart"></i>
-                    <p>İstatistikler</p>
-                </a>
-            </li>
-            <li class="nav-item">
                 <a asp-controller="Notification" asp-action="Index">
                     <i class="la la-umbrella"></i>
                     <p>Bildirimler</p>
                 </a>
             </li>
             <li class="nav-item">
-                <a asp-controller="ProgressBars" asp-action="Index">
-                    <i class="la la-bar-chart"></i>
-                    <p>Anlık Durum Çubuğu</p>
+                <a asp-controller="Mail" asp-action="Index">
+                    <i class="la la-anchor"></i>
+                    <p>Mail İşlemleri</p>
                 </a>
             </li>
             <li class="nav-item">
-                <a asp-controller="Settings" asp-action="Index">
+                <a asp-controller="QRCode" asp-action="CreateQrCode">
+                    <i class="la la-qrcode"></i>
+                    <p>QR Kod Oluştur</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a asp-controller="Setting" asp-action="Index">
                     <i class="la la-chain"></i>
                     <p>Ayarlar</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a asp-controller="Login" asp-action="LogOut">
+                    <i class="la la-plane"></i>
+                    <p>Çıkış Yap</p>
                 </a>
             </li>
             <li class="nav-item">
