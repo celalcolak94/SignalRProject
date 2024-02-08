@@ -49,5 +49,8 @@
   <li>SignalR kullanılarak admin panelinde tüm masalar listelendi. Dolu veya boş olması durumu anlık güncelleniyor.</li>
   <li>SignalR kullanılarak canlı destek ile mesajlaşma işlemi gerçekleştirildi ve anlık aktif client sayısı signalR ile çekildi.</li>
   <li>Identity kütüphanesi projeye dahil edildi. Register ve login işlemleri başarılı bir şekilde gerçekleştirildi.</li>
+  <li>Kategori, Ürün, Rezervasyon, Hakkımızda, İndirimler, İletişim gibi kısımlarda tüm revize ve refactorler yapıldı.</li>
+  <li>Mesaj sınıfı mimariye dahil edildi, api test edildi ve comsume işlemleri başarılı bir şekilde gerçekleştirildi.</li>
+  <li>Proje seviyesinde Authentication işlemi yapıldı. AllowAnonymous komutu ile UI katmanı identity dışında bırakıldı.</li>
 </ol>
 <h2>Proje Görselleri</h2>
