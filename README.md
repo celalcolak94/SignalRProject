@@ -56,3 +56,32 @@
   <li>Rezervasyon yapan müşteriye mail gönderme işlemi başarılı bir şekilde gerçekleştirildi.</li>
 </ol>
 <h2>Proje Görselleri</h2>
+<img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/ee313cff-2247-4572-9fa8-3c578e13e4a2" />
+<img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/21118c82-2cc0-4b51-b0d1-a196fed05bb7" />
+<img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/ae771fbe-93a5-4cc5-a152-ea04b1977872" />
+<img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/ce066091-82e3-4164-81ef-76e88b7f837c" />
+<img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/d838c0e9-d2e4-4e50-8661-ab06e4815513" />
+<img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/21f7efda-1f57-4538-a5a9-ab2d11b2836d" />
+<img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/e75a7aea-05bd-458b-acd3-5e0688115cb9" />
+<img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/39df89eb-7445-4b87-9721-d9c156bed4ea" />
+<img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/962e8fb0-749d-4062-9cdc-6de615c9addb" />
+<img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/8eb523b3-fe64-4b1b-9e56-c113ffa24c3a" />
+<img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/3af8fe0d-be42-403d-9f13-3ac30a0a0583" />
+<img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/fae4b321-cfd8-4b6a-9d53-af996ff1e064" />
+<img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/d0e997e2-d46e-4195-96da-99edf8aac3a4" />
+<img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/de6eb02b-a376-44a8-826e-f263d46ab189" />
+<img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/bc0c8e9d-af3d-4ed2-b656-32b5cb7f8e4c" />
+<img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/84eb7232-36f2-4347-916a-022797f3e7c6" />
+<img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/f7f73366-4a6e-4b0a-a2bb-2e24ed1537d4" />
+<img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/2c841291-b1ae-4594-a3a9-5588173f0d70" />
+<img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/f274a6e4-cfa5-452a-8111-dcf707249953" />
+<img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/b473525e-7e4d-462a-a07f-85a7644b617b" />
+<img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/6b52af82-dadd-4f6c-8e7d-72132dca1d19" />
+<img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/c91424ad-25a3-4c25-b98e-80665116aea9" />
+<img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/0d4ec507-ceaf-43c0-8d13-b59d318454f1" />
+<img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/0af73ba0-51c6-457a-8716-10831a004977" />
+<img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/45d649d2-da19-4940-9d4f-fd3898555b84" />
+<img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/c8d6e8d6-cc95-4f0d-9fd3-5a6444b71c07" />
+<img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/7ff7465a-101e-4452-8742-c56767664b76" />
+<img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/5c5a1bde-38be-42ff-a852-c10fa4736aba" />
+<img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/4346c5b3-2964-4278-beee-6f567edf42bb" />
