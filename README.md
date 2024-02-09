@@ -67,6 +67,8 @@
 <img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/962e8fb0-749d-4062-9cdc-6de615c9addb" />
 <img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/8eb523b3-fe64-4b1b-9e56-c113ffa24c3a" />
 <img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/3af8fe0d-be42-403d-9f13-3ac30a0a0583" />
+<img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/f8c6437e-c1c0-465c-a0c7-b14a790efa7b" />
+<img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/2a0e4502-2e4e-4bde-8eb9-c6addae6eb04" />
 <img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/fae4b321-cfd8-4b6a-9d53-af996ff1e064" />
 <img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/d0e997e2-d46e-4195-96da-99edf8aac3a4" />
 <img src="https://github.com/celalcolak94/SignalRProject/assets/132816581/de6eb02b-a376-44a8-826e-f263d46ab189" />
