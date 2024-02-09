@@ -52,5 +52,7 @@
   <li>Kategori, Ürün, Rezervasyon, Hakkımızda, İndirimler, İletişim gibi kısımlarda tüm revize ve refactorler yapıldı.</li>
   <li>Mesaj sınıfı mimariye dahil edildi, api test edildi ve comsume işlemleri başarılı bir şekilde gerçekleştirildi.</li>
   <li>Proje seviyesinde Authentication işlemi yapıldı. AllowAnonymous komutu ile UI katmanı identity dışında bırakıldı.</li>
+  <li>QR Kod oluşturma sayfası oluşturuldu ve test edildi. Ayarlar  sayfası oluşturuldu. Giriş yapan kullanıcının bilgileri başarı ile güncellendi.</li>
+  <li>Rezervasyon yapan müşteriye mail gönderme işlemi başarılı bir şekilde gerçekleştirildi.</li>
 </ol>
 <h2>Proje Görselleri</h2>
