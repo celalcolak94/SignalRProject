@@ -14,5 +14,6 @@ namespace SignalR.DataAccessLayer.Abstract
         string ProductNameByMinPrice();
         decimal ProductAvgPriceByHamburger();
         void ProductChangeStatus(int id);
+        decimal ProductPriceBySteakBurger();
     }
 }

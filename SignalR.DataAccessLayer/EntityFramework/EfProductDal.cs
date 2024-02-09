@@ -76,5 +76,11 @@ namespace SignalR.DataAccessLayer.EntityFramework
             product.ProductStatus = !product.ProductStatus;
             context.SaveChanges();
         }
+
+        public decimal ProductPriceBySteakBurger()
+        {
+            using var context = new SignalRContext();
+            return context.Products.FirstOrDefault(x => x.ProductName == "Steak Burger").Price;
+        }
     }
 }
